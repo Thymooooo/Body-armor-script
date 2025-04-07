@@ -49,7 +49,7 @@ RegisterCommand(Config.RemoveVest.commandName, function(source, args, rawCommand
         TriggerEvent('chat:addMessage', {
             color = {0, 255, 0},
             multiline = true,
-            args = {"[HOFSTAD ROLEPLAY]", "Je hebt je vest uitgetrokken!"}
+            args = {"[SYSTEEM]", "Je hebt je vest uitgetrokken!"}
         })
     end
 end, false)
