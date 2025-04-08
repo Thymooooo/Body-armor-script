@@ -13,7 +13,7 @@ RegisterCommand('vest', function(source, args, rawCommand)
     
     Citizen.Wait(Config.Vest.duration)
     
-    SetPedComponentVariation(playerPed, 9, Config.Vest.drawable, Config.Vest.texture, 0)
+    SetPedComponentVariation(playerPed, 9, Config.Vest.decal, Config.Vest.texture, 0)
     
     SetPedArmour(playerPed, Config.Vest.armorAmount)
     print(SetPedArmour)
@@ -26,7 +26,7 @@ RegisterCommand('vest', function(source, args, rawCommand)
         TriggerEvent('chat:addMessage', {
             color = {0, 255, 0},
             multiline = true,
-            args = {"[SYSTEEM]", "Je hebt je vest aangetrokken!"}
+            args = {"[SERVER NAME]", "Je hebt je vest aangetrokken!"}
         })
     end
 end, false)
@@ -49,7 +49,7 @@ RegisterCommand(Config.RemoveVest.commandName, function(source, args, rawCommand
         TriggerEvent('chat:addMessage', {
             color = {0, 255, 0},
             multiline = true,
-            args = {"[SYSTEEM]", "Je hebt je vest uitgetrokken!"}
+            args = {"[SERVER NAME]", "Je hebt je vest uitgetrokken!"}
         })
     end
 end, false)
